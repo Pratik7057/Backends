@@ -1,9 +1,9 @@
 {
-  "name": "RadhaAPI Platform",
-  "description": "Full-stack RadhaAPI platform with YouTube API integration",
+  "name": "RadhaAPI Backend",
+  "description": "Backend for RadhaAPI platform with YouTube API integration",
   "repository": "https://github.com/your-username/radhaapi-platform",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["node", "express", "mongodb", "jwt", "youtube-api", "react"],
+  "keywords": ["node", "express", "mongodb", "jwt", "youtube-api"],
   "stack": "heroku-22",
   "buildpacks": [
     {
