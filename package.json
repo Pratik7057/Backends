@@ -2,13 +2,14 @@
   "name": "radhaapi",
   "version": "1.0.0",
   "description": "RadhaAPI platform with YouTube API integration",
-  "main": "index.js",  "scripts": {
-    "start": "cd backend && node server.js",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && node server.js",
     "client": "cd frontend && npm start",
     "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "heroku-postbuild": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "heroku-postbuild": "cd backend && npm install",
     "render-build": "npm install && cd backend && npm install && cd ../frontend && npm install && npm run build && node ../verify-build.js",
     "build": "powershell -ExecutionPolicy Bypass -File ./build.ps1",
     "setup": "npm run install-all && npm run build",
@@ -24,7 +25,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "ytdl-core": "^4.11.4"
   },
   "engines": {
     "node": "20.x",
